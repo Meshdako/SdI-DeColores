@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,53 @@
 
     <!--Estilos-->
     <link rel="stylesheet" href="Estilos/styles.css">
+    <!--Funciones-->
+    <script src="JS/functions.js"></script>
 </head>
+
 <body>
-    <div class="Fondo_Titulo">
-        <h1 class="Titulo_1">
-            De Colores
-        </h1>
+    <button class="tablink" onclick="openPage('Iniciar', this, '#2b2d42')">Iniciar</button>
+    <button class="tablink" onclick="openPage('Registrarte', this, '#8d99ae')">Registrarte</button>
+
+    <!--Iniciar Sesión-->
+    <div id="Iniciar" class="tabcontent">
+        <form class="box_1" action="login.html" method="POST">
+            <h1>
+                Iniciar Sesión
+            </h1>
+            
+            <label for="Nombre">Nombre de Usuario</label><br>
+            <input type="text" name="" placeholder="* Nombre de Usuario" id="username"><br>
+            
+            <label for="Contraseña">Contraseña</label><br>
+            <input type="password" name="" placeholder="* Contraseña" id="password"><br>
+            
+            <input type="submit" name="" value="Iniciar">
+        </form>
+    </div>
+
+    <!--Resgistrarte-->
+    <div id="Registrarte" class="tabcontent">
+        <form class="box_2" action="registrer.html" method="POST">
+            <h1>
+                Registrarte
+            </h1>
+            
+            <label for="Nombre">Nombre de Usuario</label><br>
+            <input type="text" name="" placeholder="* Nombre de Usuario" id="username"><br>
+            
+            <label for="Contraseña">Contraseña</label><br>
+            <input type="text" name="" placeholder="* Contraseña" id="password"><br>
+            
+            <label for="Email">Email</label><br>
+            <input type="text" name="" placeholder="* Email" id="email"><br>
+            
+            <label for="Genero">Género</label><br>
+            <input type="text" name="" placeholder="Género" id="genre"><br>
+            
+            <input type="submit" name="" value="Registrer">
+        </form>
     </div>
 </body>
+
 </html>

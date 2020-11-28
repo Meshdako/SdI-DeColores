@@ -1,13 +1,34 @@
-.Fondo_Titulo {
-    background-color: #83c5be;
-    border-radius: 10px;
-    padding: 15px;
+/* Barra de Navegación */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 24px 26px;
+  font-size: 27px;
+  width: 50%;
 }
-.Titulo_1 {
-    padding: 10px;
-    margin: 5px;
-    border-radius: 10px;
-    background-color: #ff006e;
+.tablink:hover {
+  background-color: #777;
+  transform: scale(1.1);
+}
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
 
-    /*Centrar Texto*/
+/* Iniciar */
+#Iniciar {
+  background-color: #2b2d42;
+  
+}
+
+
+/* Registrarte */
+#Registrarte {
+  background-color: #8d99ae;
 }
