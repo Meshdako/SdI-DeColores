@@ -11,7 +11,5 @@ Integrantes:
 
 ## Recomendaciones
 Instalar: 
-```
 * [Xampp](https://www.apachefriends.org/es/index.html) - Para montar la Base de Datos
-```
 y dentro cargar _decolores.sql_.
