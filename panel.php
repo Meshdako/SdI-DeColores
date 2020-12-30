@@ -36,19 +36,19 @@
                 <h5>Entradas</h5>
             </div>
             <li class="nav-item">
-                <a href="admin.php?pagina=clientes"  class="nav-link"><span>Ingresar Productos</span> </a>
+                <a href="productos"  class="nav-link"><span>Ingresar Productos</span> </a>
             </li>
             <li class="nav-item">
-                <a href="admin.php?pagina=comunas" class="nav-link"><span>Ingresar Ventas</span> </a>
+                <a href="ventas" class="nav-link"><span>Ingresar Ventas</span> </a>
             </li>
             <li class="nav-item">
-                <a href="admin.php?pagina=ccursos" class="nav-link"><span>Ingresar Datos de Cliente</span> </a>
+                <a href="clientes" class="nav-link"><span>Ingresar Datos de Cliente</span> </a>
             </li>
             <li class="nav-item">
-                <a href="admin.php?pagina=buscador" class="nav-link"><span>Ingresar Datos de Proveedor</span> </a>
+                <a href="proveedor" class="nav-link"><span>Ingresar Datos de Proveedor</span> </a>
             </li>
             <li class="nav-item">
-                <a href="admin.php?pagina=buscador" class="nav-link"><span>Ingresar Datos de Cliente</span> </a>
+                <a href="datoscliente" class="nav-link"><span>Ingresar Datos de Cliente</span> </a>
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -56,22 +56,22 @@
                 <h5>Salidas</h5>
             </div>
             <li class="nav-item">
-                <a href="admin.php?pagina=cursos"  class="nav-link"><span>Información de Productos</span> </a>
+                <a href="productos.php"  class="nav-link"><span>Información de Productos</span> </a>
             </li>
             <li class="nav-item">
-                <a href="admin.php?pagina=cursos"  class="nav-link"><span>Información Bancaria de Proveedores</span> </a>
+                <a href="clientes.php"  class="nav-link"><span>Información Clientes </span> </a>
             </li>
             <li class="nav-item">
-                <a href="admin.php?pagina=cursos"  class="nav-link"><span>Información de Contacto de Proveedores</span> </a>
+                <a href="cp"  class="nav-link"><span>Información de Contacto de Proveedores</span> </a>
             </li>
             <li class="nav-item">
-                <a href="admin.php?pagina=cursos"  class="nav-link"><span>Servicios ofrecidos</span> </a>
+                <a href="so"  class="nav-link"><span>Servicios ofrecidos</span> </a>
             </li>
             <li class="nav-item">
-                <a href="admin.php?pagina=cursos"  class="nav-link"><span>Información Clientes</span> </a>
+                <a href="ibp"  class="nav-link"><span>Información Bancaria de Proveedores</span> </a>
             </li>
             <li class="nav-item">
-                <a href="admin.php?pagina=acursos"  class="nav-link"><span>Información Ventas</span> </a>
+                <a href="iv"  class="nav-link"><span>Información Ventas</span> </a>
             </li>
             <hr class="sidebar-divider">
             <li class="nav-item">

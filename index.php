@@ -52,35 +52,22 @@
     
 
     <?php
-        include "conexion.php";
-        if(!empty($_POST)){
-            $usuario = mysqli_real_escape_string($con,$_POST['nom_usuario']);
-            $password = mysqli_real_escape_string($con,$_POST['password']);
-            $pass_brigida= sha1($password);
-            $sql = "SELECT nom_usuario FROM usuarios 
-                    WHERE usuario = '$usuario' AND password ='$pass_brigida' ";
-
-            $resultado = $con->query($sql);
-            $rows = $resultado->num_rows;
-            
-            
-            if($rows>0)
-            {
-                $row = $resultado->fetch_assoc();
-                $_SESSION['nom_usuario']=$row["usuarios"];
-                if($_POST['correo']=="admin@decolores.cl")
-                header("location: panel.php");
-            
-            }
-            else{
-                ?>
-                <script>
-                    var element = document.getElementById("mensaje");
-                    element.style.color = '#d00' 
-                    element.className = "container card col-md-5 mb-5 text-center alert alert-secondary"; 
-                    element.innerHTML ="<span class='alert-secondary'> Usuario y/o contraseña incorrectos, por favor verifique los datos </span>";
-                </script>
-            <?php
-            }
+        if(!empty($_POST))
+        {
+          if ($_POST['nom_usuario']=="admin" and $_POST['password']=="admin123")
+          {
+              echo sha1($_POST['password']);
+              header("location: panel.php");
+          }
+          else{
+              ?>
+              <script>
+                  var element = document.getElementById("mensaje");
+                  element.style.color = '#d00' 
+                  element.className = "container card col-md-5 mb-5 text-center alert alert-danger"; 
+                  element.innerHTML ="<span class='alert-danger'> Usuario y/o contraseña incorrecto, por favor verifique los datos </span>";
+              </script>
+          <?php
+          }
         }
-    ?>
+      ?>
