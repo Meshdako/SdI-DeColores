@@ -1,4 +1,8 @@
-# Trabajo final Sistema de Inforamción
+# Trabajo Final - Sistema de Inforamción
+Universidad Tecnológica Metropolitana.
+Asignatura : Sistemas de Información.
+Profesora : Sara Filomena.
+_Sección : 411_
 Integrantes:
 ```
 * Rodrigo Mora Palta.
