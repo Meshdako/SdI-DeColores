@@ -1,9 +1,10 @@
 # Trabajo Final - Sistema de Inforamción
-Universidad Tecnológica Metropolitana.
-Asignatura : Sistemas de Información.
-Profesora : Sara Filomena.
-_Sección : 411_
-Integrantes:
+## Universidad Tecnológica Metropolitana.
+### Asignatura
+Sistemas de Información.
+### Profesora
+Sara Filomena Rojas Aldea - Sección : 411
+### Integrantes:
 ```
 * Rodrigo Mora Palta.
 * Cristobal Abarca Abarzua.
