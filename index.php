@@ -51,7 +51,7 @@
 </html>
     
 
-    <?php
+<?php
         if(!empty($_POST))
         {
           if ($_POST['nom_usuario']=="admin" and $_POST['password']=="admin123")
@@ -70,4 +70,4 @@
           <?php
           }
         }
-      ?>
+?>

@@ -75,42 +75,48 @@
             <br>
         </div>
     </div>
-    <div class="col lg-5 md-5 mb-5">
-            <br><br>
-            <h2 class="text-center">Productos</h2><br>
-            <table class="container text-center table table-bordered" id="eliminado" >
-            <caption>Lista de productos</caption>
-                <thead class="container table-primary">
-                <tr>
-                                        <th>Codigo producto</th>
-                                        <th>Codigo categoria</th>
-                                        <th>Codigo subcategoria</th>
-                                        <th>Precio venta</th>
-                                        <th>Stock</th>
-                                        <th>Sala</th>
-                                        <th>Nombre</th>        
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                        <?php
-                                        include "conexion.php";
-                                        $sql="SELECT * FROM productos";
-                                        $result= mysqli_query($con,$sql);
-                                        while($mostrar=mysqli_fetch_array($result))
-                                        {       
-                                        ?>
-                                        <tr>
-                                            
-                                            <td><?php echo $mostrar['cod_prod']?></td>
-                                            <td><?php echo $mostrar['cod_cat']?></td>
-                                            <td><?php echo $mostrar['cod_subcat']?></td>
-                                            <td><?php echo $mostrar['prec_vent']?></td>
-                                            <td><?php echo $mostrar['stock_tot']?></td>
-                                            <td><?php echo $mostrar['sala']?></td>
-                                            <td><?php echo $mostrar['nom_prod']?></td>
-                                        </tr> <?php
-                                            };?>
-    </div>
-</div>
-</body>
- </html>
+    <div class="container col lg-12 md-12 mb-5">
+        <br><br>
+        <h2 class="text-center">Ingresar nuevos productos</h2><br>
+        <div class="container col-sm-8">
+            <div class="container">
+                <form class="container form-floating" action="ingprod.php" id="ingreso" method="POST">
+                            <input class="container" type="number" name="codprod" placeholder="Ingrese codigo de producto"> <br>
+                            <input class="container" type="number" name="codcat" placeholder="Ingrese codigo de categoria"> <br>
+                            <input class="container" type="number" name="codsub" placeholder="Ingrese codigo de subcategoria"> <br>
+                            <input class="container" type="number" name="codvent" placeholder="Ingrese codigo venta"> <br>
+                            <input class="container" type="number" name="codstock" placeholder="Ingrese stock"> <br>
+                            <input class="container" type="number" name="codsala" placeholder="Ingrese sala"> <br>
+                            <input class="container" type="text" name="codnombre" placeholder="Ingrese nombre"> <br>
+                            <input type="hidden" name="opcion" value="<?php echo $opcion?>">
+                            <div>
+                                <br>
+                                <input class="container btn btn-primary" type="submit" name="boton" value="Añadir Curso">
+                            </div>
+                </form>
+                <?php
+                        
+                        if(isset($_POST['codprod']))
+                        {
+                            include "conexion.php";
+                            $codigo=$_POST['codprod'];
+                            $codcategoria=$_POST['codcat'];
+                            $codsubcategoria=$_POST['codsub'];
+                            $prventa=$_POST['codvent'];
+                            $stock=$_POST['codstock'];
+                            $sala=$_POST['codsala'];
+                            $nombre=$_POST['codnombre'];
+                            $sql="INSERT INTO `productos` (`cod_prod`, `cod_cat`, `cod_subcat`, `prec_vent`,
+                             `stock_tot`, `sala`, `nom_prod`) VALUES ('$codigo','$codcategoria','$codsubcategoria','$prventa',
+                             '$stock','$sala','$nombre')";
+                            $con->query($sql);
+                            ?>
+                            <script>
+                            var element = document.getElementById("ingreso");
+                            element.style.color = '#d00' 
+                            element.className = "container col lg-8 md-8 mb-5 alert alert-success"; 
+                            element.innerHTML ="<span class='alert-success'> Producto agregado con exito en la base de datos </span>";
+                            window.setTimeout(function() { window.location = "ingprod.php" },1000);
+                        </script><?php
+                            
+                            }

@@ -36,7 +36,7 @@
                     <h5>Entradas</h5>
                 </div>
                 <li class="nav-item">
-                    <a href="admin.php?pagina=clientes"  class="nav-link"><span>Ingresar Productos</span> </a>
+                    <a href="ingprod.php"  class="nav-link"><span>Ingresar Productos</span> </a>
                 </li>
                 <li class="nav-item">
                     <a href="admin.php?pagina=comunas" class="nav-link"><span>Ingresar Ventas</span> </a>

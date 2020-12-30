@@ -36,7 +36,7 @@
                 <h5>Entradas</h5>
             </div>
             <li class="nav-item">
-                <a href="productos"  class="nav-link"><span>Ingresar Productos</span> </a>
+                <a href="ingprod.php"  class="nav-link"><span>Ingresar Productos</span> </a>
             </li>
             <li class="nav-item">
                 <a href="ventas" class="nav-link"><span>Ingresar Ventas</span> </a>
@@ -62,20 +62,14 @@
                 <a href="clientes.php"  class="nav-link"><span>Información Clientes </span> </a>
             </li>
             <li class="nav-item">
-                <a href="cp"  class="nav-link"><span>Información de Contacto de Proveedores</span> </a>
+                <a href="proveedores.php"  class="nav-link"><span>Información de Proveedores</span> </a>
             </li>
             <li class="nav-item">
-                <a href="so"  class="nav-link"><span>Servicios ofrecidos</span> </a>
-            </li>
-            <li class="nav-item">
-                <a href="ibp"  class="nav-link"><span>Información Bancaria de Proveedores</span> </a>
-            </li>
-            <li class="nav-item">
-                <a href="iv"  class="nav-link"><span>Información Ventas</span> </a>
+                <a href="ventas.php"  class="nav-link"><span>Información Ventas</span> </a>
             </li>
             <hr class="sidebar-divider">
             <li class="nav-item">
-                <a href="index.php?pagina=inicio"  class="nav-link"><span>Cerrar Sesion</span> </a>
+                <a href="index.php"  class="nav-link"><span>Cerrar Sesion</span> </a>
             </li>
         </ul>
 
